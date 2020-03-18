@@ -4,14 +4,12 @@
 using namespace std;
 class Student
 {
-private:
-	string s;
 protected:
 	float fMath, fLit;
 public:
+	string s;
 	float AveScore;
 	int Grade;
-	virtual void Input();
 	virtual float Average()
 	{
 		return AveScore = (fMath + fLit) / 2;
@@ -19,10 +17,10 @@ public:
 };
 class Grade6_7:public Student
 {
-private:
+protected:
 	float fGDCD;
 public:
-	void Input();
+	void Init(string, float, float, float);
 	float Average()
 	{
 		 return AveScore = (fMath + fLit + fGDCD)/3;
@@ -30,10 +28,10 @@ public:
 };
 class Grade8_9 :public Student
 {
-private:
-	float fPhy,fChem;
+protected:
+	float fPhy, fChem;
 public:
-	void Input();
+	void Init(string, float, float, float,float);
 	float Average()
 	{
 		return AveScore = (fMath + fLit + fPhy+fChem) / 4;
@@ -41,14 +39,12 @@ public:
 };
 class Grade10_11_12 : public Student
 {
-private:
+protected:
 	float fEng;
 public:
-	void Input();
+	void Init(string, float, float, float);
 	float Average()
 	{
 		return AveScore = (fMath + fLit + fEng) / 3;
 	}
 };
-
-float Check(Student* a);
