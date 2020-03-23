@@ -88,7 +88,19 @@ int main()
     }
     for (int i = 0; i < vtStudents.size(); i++)
     {
-        cout << "Name: " << vtStudents[i].s << "  Grade: " << vtStudents[i].Grade << "   Average: " << vtStudents[i].AveScore << endl;
+        if (vtStudents[i].Grade == 6 || vtStudents[i].Grade == 7)
+        {
+            cout << "Name: " << vtStudents[i].s << " Grade: " << vtStudents[i].Grade <<" Math: " << vtStudents[i].fMath <<" Literature: "<<vtStudents[i].fLit <<" GDCD: "<< vtStudents[i].fGDCD<<" Average: " << vtStudents[i].AveScore << endl;
+        }
+        if (vtStudents[i].Grade == 8 || vtStudents[i].Grade == 9)
+        {
+            cout << "Name: " << vtStudents[i].s << " Grade: " << vtStudents[i].Grade << " Math: " << vtStudents[i].fMath << " Literature: " << vtStudents[i].fLit << " Physics: " << vtStudents[i].fPhy << " Chemistry: " << vtStudents[i].fChem << " Average: " << vtStudents[i].AveScore << endl;
+        }
+        if (vtStudents[i].Grade == 10 || vtStudents[i].Grade == 11 ||  vtStudents[i].Grade==12 )
+        {
+            cout << "Name: " << vtStudents[i].s << " Grade: " << vtStudents[i].Grade << " Math: " << vtStudents[i].fMath << " Literature: " << vtStudents[i].fLit << " English: " << vtStudents[i].fEng << " Average: " << vtStudents[i].AveScore << endl;
+        }
+        
     }
     return 0;
 }
