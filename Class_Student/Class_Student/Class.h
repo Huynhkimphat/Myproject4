@@ -1,11 +1,12 @@
 #include<iostream>
 #include<string.h>
 #include <string>
+#include<sstream>
 using namespace std;
 class Student
 {
 public:
-	string s;
+	string strName;
 	float AveScore;
 	int Grade;
 	float fMath, fLit, fGDCD, fPhy, fChem, fEng;
@@ -13,6 +14,8 @@ public:
 	{
 		return AveScore = (fMath + fLit) / 2;
 	}
+	string to_string();
+
 };
 class Grade6_7:public Student
 {
