@@ -2,6 +2,7 @@
 #include"Class.h"
 #include<vector>
 #include<string>
+#include<math.h>
 using namespace std;
 void Input(int iX, string& k, float& fMa,float& fLi,float& fGd,float& fCh,float& fPh,float& fEn)
 {
